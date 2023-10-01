@@ -150,7 +150,7 @@ namespace PasswordLibraryTests
         public void CheckPassword_Cyrillic_ReturnedException()
         {
             //Arrange
-            string password = "ПетровВова";
+            string password = "PassworddЯ123@";
 
             //Act
             PasswordClass obj = new PasswordClass();
@@ -158,5 +158,6 @@ namespace PasswordLibraryTests
             //Assert
             Assert.ThrowsException<Exception>(actual);
         }
+        
     }
 }
